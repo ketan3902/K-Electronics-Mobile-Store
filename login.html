@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <title>Sign Up</title>
+        <style>
+
+            body
+            {
+                background-color: blueviolet;
+            }
+
+            div.a 
+            {
+                border:10px double white;                    
+                height:500px;               
+                width:700px;    
+                background-color: white;            
+                border-top-right-radius: 70px;               
+                border-bottom-left-radius: 70px;              
+                margin-left:650px;              
+                margin-top:200px;               
+                background-color:burlywood;              
+
+            }
+
+            div.aa
+            {
+                margin-left:160px;
+                margin-top:100px;
+                font-size:20;
+                font-weight: bolder; 
+            }
+
+            #btn
+            {
+                font-weight: bolder;
+                font-size:25px;
+                font-family: cursive;
+                margin-left:150px;
+                margin-top:50px;
+                border:7px outset black;    
+            }
+            
+            #btn:hover
+
+            {   
+                background-color: rgb(184, 46, 0);     
+                color:white;   
+                transition:1.5s;     
+            }
+
+
+
+        </style>            
+    </head>              
+    <body>      
+        <div class="a"> 
+
+            <div class="aa">
+
+                E-mail:<input type="text" id="user" placeholder="Enter Email Id" style="margin-left:55px; height: 50px; border:10px;"><br><br><br>
+                Password:<input type="password" id="pass" placeholder="Enter Password" style="margin-left:30px; height: 50px; border:10px;"><br><br><br>
+
+                <input type="button" id="btn" value="Login" onclick="f1()">
+            </div>  
+
+        </div>
+
+        <script>
+            function f1()
+            {
+                var mail,pass;
+                mail=document.getElementById("user").value;
+                pass=document.getElementById("pass").value;
+
+                if(mail=="123@gmail.com" && pass=="123")
+                {
+                    alert("Login Successfull"); 
+                    window.open("home.html","_self");     
+                    
+
+                }
+                else
+                {
+                    alert("Login Failed.");        
+                    window.close();       
+                }
+            }
+        </script>
+        
+    </body>
+</html>
